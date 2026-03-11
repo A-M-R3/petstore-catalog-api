@@ -68,7 +68,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"name": "Premium Grain-Fre
 curl http://localhost:8080/products
 ```
 
-**Filter Products by Producer (Bonus Implemented)**
+**Filter Products by Producer**
 ```bash
 curl "http://localhost:8080/products?producerId=1"
 ```
