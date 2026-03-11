@@ -1,4 +1,4 @@
-package com.amr3.petstore_catalog_api;
+package com.amr3.petstorecatalogapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
