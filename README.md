@@ -7,7 +7,7 @@ This is a REST API for a product catalog management system. It manages producers
 This project is designed to run completely standalone with zero external dependencies.
 
 **Prerequisites:**
-- Java 21 or higher
+- Java 21 or higher.
 - Maven (Wrapper included)
 
 **To run the application:**
