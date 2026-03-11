@@ -29,11 +29,11 @@ Once the application is running, you can access the Swagger UI to test the endpo
 
 * **Dynamic Attributes (JSON):** Products can have anywhere from just a few attributes to 50-200 distinct attributes depending on their type. I utilized an H2 JSON column mapped via Hibernate's `@JdbcTypeCode(SqlTypes.JSON)`. This maps seamlessly to a Java `Map<String, Object>`, providing high flexibility without sacrificing schema integrity for the core fields (price, name, etc.).
 
-* **In-Memory Database (H2):** Chosen specifically so reviewers do not need to configure a local PostgreSQL or Oracle instance to run the application.
+* **In-Memory Database (H2):** Chosen specifically so it doesn't need to configure a local PostgreSQL or Oracle instance to run the application.
 
 * **Database Migrations:** Managed via Liquibase on startup to ensure a consistent schema.
 
-* **Exclusions:** Advanced features like Spring Security, caching, and Docker deployments were deliberately excluded to strictly adhere to the assessment's "What We're NOT Looking For" guidelines.
+* **Exclusions:** Advanced features like Spring Security, caching, and Docker deployments were excluded.
 
 ## Implemented:
 
@@ -47,7 +47,7 @@ Once the application is running, you can access the Swagger UI to test the endpo
 
 ## API Usage Examples
 
-### 1. Producers (Bonus Implemented)
+### 1. Producers
 **Create a Producer**
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Royal Canin Europe"}' http://localhost:8080/producers
