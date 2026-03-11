@@ -21,8 +21,9 @@ This project is designed to run completely standalone with zero external depende
 5. The H2 Database console is available at `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:petstoredb`, User: `sa`, Password: [blank])
 
 **Interactive API Documentation:**
-Once the app is running, you can access the Swagger UI to test the endpoints visually at:
-`http://localhost:8080/swagger-ui/index.html`
+Once the application is running, you can access the Swagger UI to test the endpoints:
+- **Local:** `http://localhost:8080/swagger-ui/index.html`
+- **Codespaces:** Click the globe icon in the **Ports** tab for port 8080 (the root will automatically redirect you to Swagger).
 
 ## Architectural Decisions
 
