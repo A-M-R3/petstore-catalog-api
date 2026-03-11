@@ -20,6 +20,10 @@ This project is designed to run completely standalone with zero external depende
 4. The API will be available at `http://localhost:8080`
 5. The H2 Database console is available at `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:petstoredb`, User: `sa`, Password: [blank])
 
+**Interactive API Documentation:**
+Once the app is running, you can access the Swagger UI to test the endpoints visually at:
+`http://localhost:8080/swagger-ui/index.html`
+
 ## Architectural Decisions
 
 * **Dynamic Attributes (JSON):** Products can have anywhere from just a few attributes to 50-200 distinct attributes depending on their type. I utilized an H2 JSON column mapped via Hibernate's `@JdbcTypeCode(SqlTypes.JSON)`. This maps seamlessly to a Java `Map<String, Object>`, providing high flexibility without sacrificing schema integrity for the core fields (price, name, etc.).
